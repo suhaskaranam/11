@@ -1,0 +1,121 @@
+Conditional Statements:
+
+Conditional statements execute specific code blocks based on conditions or decisions.
+
+Types:
+
+1. if statement
+2. if-else statement
+3. if-else if-else statement
+4. switch statement
+5. ternary operator
+
+if Statement
+
+Syntax:
+
+if (condition) {
+  // code to execute if condition is true
+}
+
+Example:
+
+let age = 25;
+if (age >= 18) {
+  console.log("You're an adult.");
+}
+
+if-else Statement
+
+Syntax:
+
+if (condition) {
+  // code to execute if condition is true
+} else {
+  // code to execute if condition is false
+}
+
+Example:
+
+let grade = 85;
+if (grade >= 90) {
+  console.log("You passed with distinction.");
+} else {
+  console.log("You passed.");
+}
+
+if-else if-else Statement
+
+Syntax:
+
+if (condition1) {
+  // code to execute if condition1 is true
+} else if (condition2) {
+  // code to execute if condition1 is false and condition2 is true
+} else {
+  // code to execute if all conditions are false
+}
+
+Example:
+
+let score = 75;
+if (score >= 90) {
+  console.log("You passed with distinction.");
+} else if (score >= 70) {
+  console.log("You passed.");
+} else {
+  console.log("You failed.");
+}
+
+switch Statement
+
+Syntax:
+
+switch (expression) {
+  case value1:
+    // code to execute if expression matches value1
+    break;
+  case value2:
+    // code to execute if expression matches value2
+    break;
+  default:
+    // code to execute if expression doesn't match any value
+    break;
+}
+
+Example:
+
+let day = "Monday";
+switch (day) {
+  case "Monday":
+    console.log("Today is Monday.");
+    break;
+  case "Tuesday":
+    console.log("Today is Tuesday.");
+    break;
+  default:
+    console.log("Today is not Monday or Tuesday.");
+    break;
+}
+
+Ternary Operator
+
+Syntax:
+
+condition ? valueIfTrue : valueIfFalse
+
+Example:
+
+let isValid = true;
+let message = isValid ? "Valid" : "Invalid";
+console.log(message); // Output: "Valid"
+
+
+Best Practices:
+
+1. Use curly braces {} for clarity.
+2. Avoid nested conditional statements.
+3. Use meaningful variable names.
+4. Document complex conditions.
+
+Conditional statements enable dynamic decision-making, enhancing code flexibility and readability.

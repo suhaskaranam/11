@@ -1,0 +1,60 @@
+Student Grading Program
+
+JavaScript Implementation
+
+function gradeStudent(marks) {
+  if (marks > 90) {
+    return "A";
+  } else if (marks >= 70 && marks <= 90) {
+    return "B";
+  } else if (marks >= 50 && marks < 70) {
+    return "C";
+  } else if (marks < 50) {
+    return "F";
+  } else {
+    return "Invalid marks";
+  }
+}
+
+// Example usage:
+let marks = prompt("Enter student marks (0-100):");
+let grade = gradeStudent(marks);
+console.log(`Grade: ${grade}`);
+
+
+Python Implementation
+
+def grade_student(marks):
+    if marks > 90:
+        return "A"
+    elif 70 <= marks <= 90:
+        return "B"
+    elif 50 <= marks < 70:
+        return "C"
+    elif marks < 50:
+        return "F"
+    else:
+        return "Invalid marks"
+
+# Example usage:
+marks = int(input("Enter student marks (0-100): "))
+grade = grade_student(marks)
+print(f"Grade: {grade}")
+
+
+Program Explanation
+
+1. Define a function gradeStudent/grade_student taking marks as input.
+2. Use if-else statements to determine grade based on marks range.
+3. Return corresponding grade.
+4. Get user input for marks.
+5. Call gradeStudent/grade_student function.
+6. Display resulting grade.
+
+Example Use Cases
+
+- Input: 92 Output: A
+- Input: 75 Output: B
+- Input: 60 Output: C
+- Input: 40 Output: F
+- Input: 101 Output: Invalid marks

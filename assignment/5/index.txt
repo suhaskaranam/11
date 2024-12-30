@@ -1,0 +1,45 @@
+Printing Numbers Using While Loop
+
+Ascending Order (1-25)
+
+
+let i = 1;
+while (i <= 25) {
+  console.log(i);
+  i++;
+}
+
+
+Descending Order (25-1)
+
+
+let i = 25;
+while (i >= 1) {
+  console.log(i);
+  i--;
+}
+
+
+Explanation
+
+1. Initialize counter variable i.
+2. Set condition for loop continuation.
+3. Log current value.
+4. Increment/decrement counter.
+5. Repeat until condition is met.
+
+Output (Ascending)
+
+1
+2
+3
+...
+25
+
+Output (Descending)
+
+25
+24
+23
+...
+1
